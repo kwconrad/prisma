@@ -374,7 +374,7 @@ importers:
       p-retry: 4.6.2
       strip-ansi: 6.0.1
       typescript: 4.6.4
-      undici: 5.1.1
+      undici: 5.2.0
     dependencies:
       '@prisma/debug': link:../debug
       '@prisma/engines': 3.15.0-9.0c364ac42b7e78faad00640efb007598192fa511
@@ -387,7 +387,7 @@ importers:
       new-github-issue-url: 0.2.1
       p-retry: 4.6.2
       strip-ansi: 6.0.1
-      undici: 5.1.1
+      undici: 5.2.0
     devDependencies:
       '@swc/core': 1.2.182
       '@swc/jest': 0.2.21_@swc+core@1.2.182
@@ -513,7 +513,7 @@ importers:
       make-dir: 3.1.0
       mariadb: 3.0.0
       mock-stdin: 1.0.0
-      mssql: 8.1.0
+      mssql: 8.1.1
       pg: 8.7.3
       pkg-up: 3.1.0
       prompts: 2.4.2
@@ -533,7 +533,7 @@ importers:
       indent-string: 4.0.0
       log-update: 4.0.0
       mariadb: 3.0.0
-      mssql: 8.1.0
+      mssql: 8.1.1
       pg: 8.7.3
       pkg-up: 3.1.0
       prompts: 2.4.2
@@ -6151,6 +6151,23 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: true
+
+  /mssql/8.1.1:
+    resolution: {integrity: sha512-1eqLvf/x7owSnwZGpd2oDpBC/BzALjl+ERG2S+4I5IBmeNnxe+XftBrWq9qpgIsJrqyUBBUNoYNNAcbJcQzWFg==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@tediousjs/connection-string': 0.3.0
+      commander: 9.2.0
+      debug: 4.3.4
+      rfdc: 1.3.0
+      tarn: 3.0.2
+      tedious: 14.5.0_debug@4.3.4
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: false
 
   /native-duplexpair/1.0.0:
     resolution: {integrity: sha1-eJkHjmS/PIo9cyYBs9QP8F21j6A=}
@@ -7757,8 +7774,8 @@ packages:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
 
-  /undici/5.1.1:
-    resolution: {integrity: sha512-CmK9JzLSMGx+2msOao8LhkKn3J7eKo2M50v0KZQ2XbiHcGqLS1HiIj01ceIm3jbUYlspw/FTSb6nMdSNyvVyaQ==}
+  /undici/5.2.0:
+    resolution: {integrity: sha512-XY6+NS3WH9b3TKOHeNz2CjR+qrVz/k4fO9g3etPpLozRvULoQmZ1+dk9JbIz40ehn27xzFk4jYVU2MU3Nle62A==}
     engines: {node: '>=12.18'}
     dev: false
 
